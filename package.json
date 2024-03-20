@@ -5,17 +5,20 @@
   "scripts": {
     "start": "bun run src/index.ts",
     "start:watch": "bun run --watch src/index.ts",
-    "start:hot": "bun run --hot src/index.ts"
+    "start:hot": "bun run --hot src/index.ts",
+    "migrate": "bun run src/migrate.ts"
   },
   "devDependencies": {
     "@types/bun": "^1.0.8",
     "@types/pg": "^8.11.3",
+    "drizzle-kit": "^0.20.14",
     "ts-dotenv": "^0.9.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "drizzle-orm": "^0.30.3",
     "pg": "^8.11.3"
   }
 }
