@@ -34,7 +34,7 @@ const server = Bun.serve({
         and(
           eq(tasks.id, 1),
           eq(tasks.isCompleted, false),
-          gte(tasks.createdAt, new Date("2024-03-24"))
+          gte(tasks.createdAt, new Date("2024-03-25"))
         )
       );
     console.log(result);
