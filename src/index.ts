@@ -38,7 +38,7 @@ const server = Bun.serve({
         )
       );
     console.log(result);
-    return new Response("Bun");
+    return new Response("Bun!");
   },
 });
 
